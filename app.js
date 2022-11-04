@@ -38,7 +38,11 @@ app.use(`${api}/categories`,routerCategories)
 
 //connect to database
 mongoose
-  .connect(process.env.CONNECTION_STRING)
+  .connect(process.env.CONNECTION_STRING,{
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+
+  })
   .then(() => {
     console.log("database is ready..");
   })
