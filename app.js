@@ -46,6 +46,8 @@ mongoose
     console.log(err);
   });
 
+  const PORT = process.env.PORT || 3000;
+  //Server
 app.listen(3000, () => {
   console.log(api);
   console.log(" Server is running at http://localhost:3000/");
