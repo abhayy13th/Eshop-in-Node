@@ -3,7 +3,7 @@ const { Category } = require("../models/category");
 const router = express.Router();
 const { Product } = require("../models/product");
 const mongoose = require ("mongoose")
-const multer = require('multer');
+const multer = require("multer");
 
 const FILE_TYPE_MAP = {
   'image/png':'png',
